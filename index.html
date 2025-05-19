@@ -16,18 +16,36 @@
 
     <nav>
         <ul>
+            <li><a hred="#perfil">Perfíl</a></li>
             <li><a href="#resumen">Sobre mí</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#educación">Educación</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#referencias">Referencias</a></li>
         </ul>
     </nav>
 
     <main>
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <img 
+                src="https://placehold.co/100x100"/>     
+        </section>
         <section id="resumen">
             <h2>Sobre mí</h2>
             <p>Desarrollador Full Stack con 3 años de experiencia en Java, Python, C y HTML</p>
+            <iframe 
+                width="553" 
+                height="280" 
+                src="https://www.youtube.com/embed/ospMSqZX2ZY" 
+                title="Presentacion" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
         </section>
 
         <section id="habilidades">
@@ -39,6 +57,39 @@
                 <li>Bases de datos: </li>
                 <li>Sistemas operaticos. Linux, Windows</li>
             </ul>
+            <h3>Resumen de habilidades</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Básico</th>
+                    <th>Intermedio</th>
+                    <th>Avanzado</th>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td></th>
+                    <td>X</th>
+                    <td></th>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td></th>
+                    <td>X</th>
+                    <td></th>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <td>X</th>
+                    <td></th>
+                    <td></th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <td>X</th>
+                    <td></th>
+                    <td></th>
+                </tr>
+            </table>
         </section>
 
         <section>
@@ -58,10 +109,62 @@
     </main>
 
     <footer>
-        <p>&copy Mateo Mayorga 2025</p>
-        <ul>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="https://github.com/bironmanusa">GitHub</a></li>
-        </ul>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>&copy Mateo Mayorga 2025</p>
+            <ol>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="https://github.com/bironmanusa">GitHub</a></li>
+            </ol>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccione</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <input type="radio" id="email" name="contacto" value="email" requiered>
+                    <label for="email">Email</label>
+                    <input type="radio" id="telefono" name="contacto" value="telefono" requiered>
+                    <label for="telefono">Teléfono</label>
+                </fieldset>
+
+                <label for="intereses">Áreas de interés</label>
+                <select id="intereses" name="intereses[]" multiple requiered>
+                    <option value="desarrollo">Desarrollo</option>
+                    <option value="diseño">Diseño</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="investigacion">Investigación</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4709828389647!2d-79.96756473044406!3d-2.147934799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c7e8b6e5c1%3A0x6e7e0e7c1b2e0e7e!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716138000000!5m2!1ses!2sec"
+                width="350"
+                height="200"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <ul>
+
+            </ul>
+        </section>
     </footer>
 </body>
