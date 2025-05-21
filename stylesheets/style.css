@@ -1,0 +1,36 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "Arvo", serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+.subtitle {
+    font-family: "Jaldi", serif;
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
+footer p {
+    text-align: right;
+    font-style: italic;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+section {
+    border: 0.2pt solid #cedddd;
+    margin: 4px 2px 8px 2px;
+    padding: 1.5% 0.8%;
+    margin-bottom: 1.2rem;
+}
